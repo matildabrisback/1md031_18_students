@@ -1,0 +1,75 @@
+body {
+  font-family: arial;
+  font-size: 20px;
+}
+.gluten {
+  font-weight: bold;
+}
+.lactose {
+  font-weight: bold;
+}
+.firstsection {
+  color: white;
+  background-color: black;
+  margin: 50px 5px 50px 0px;
+  border: 2px dashed;
+  border-color: white;
+  padding: 2% 5% 2% 5%;
+}
+.secondsection {
+  margin: 50px 5px 50px 0px;
+  border: 2px dashed;
+  border-color; black;
+  padding: 2% 5% 2% 5%;
+}
+button {
+  margin: 50px 0px 50px 0px;
+  font-size: 20px;
+}
+button:hover {
+  background-color: #3498DB
+}
+table {
+  width: 75%;
+}
+#header {
+  margin: 0px 5px 0px 0px;
+  overflow: hidden;
+  opacity: 1;
+  height: auto;
+}
+#headertext {
+  position: absolute;
+  padding: 12% 55% 15% 5%;
+}
+#headerpic {
+  height: auto;
+  width: 100%;
+}
+.wrapper {
+  display: grid;
+  /*grid-gap: 10px;
+  grid-template-columns: 100px 100px 100px;*/
+}
+
+.box {
+     background-color: #444;
+     color: #fff;
+     /*border-radius: 5px;
+     padding: 20px;*/
+ }
+
+.a {
+  grid-column: 1;
+  background-color: black;
+}
+
+.b {
+  grid-column: 2;
+  background-color: black;
+}
+
+.c {
+  grid-column: 3;
+  background-color: black;
+}
