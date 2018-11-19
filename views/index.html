@@ -8,8 +8,7 @@
 				<script src="https://vuejs.org/js/vue.js" defer></script>
 				<script src="js/vue_script.js" defer></script>
 				<script type="text/javascript" src="js/menu.js"></script>
-
-            <link rel="stylesheet" href="css/deli-very.css">
+        <link rel="stylesheet" href="css/deli-very.css">
         <title>Order your burger!</title>
         <meta charset="utf-8"/>
     </head>
@@ -49,7 +48,7 @@
 										<li>Contains <span class="lactose">lactose</span></li>
 										<li>{{burger.kCal}} kCal</li>
 									</ul>
-									<input type="checkbox" value="burger.name" v-model="checkedBurger">
+									<input type="checkbox" v-bind:value="burger.name" v-model="checkedBurger">
                   <label for = "burger2">{{burger.name}}</label>
 								</div>
 								</div>
@@ -62,7 +61,7 @@
 									 <li>Contains <span class="gluten">gluten</span></li>
 									 <li>{{burger.kCal}} kCal</li>
 									</ul>
-									<input type="checkbox" value ="burger.name" v-model="checkedBurger">
+									<input type="checkbox" v-bind:value ="burger.name" v-model="checkedBurger">
                   <label for = "burger3">{{burger.name}}</label>
 								</div>
 							</div>
@@ -124,7 +123,7 @@
             <h1> Click in the map! </h1>
             <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
             <div class="view-box">
-              <div id="dots" v-on:click="addOrder">
+              <div id="dots" v-on:click="displayOrder">
                   <div
                     v-for="(order, key) in orders"
                     v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
@@ -152,8 +151,6 @@
 						<h4>Payment: {{selectedPayment}}</h4>
             <h4>Chosen burger: {{checkedBurger}}</h4>
 					</div>
-
-
 
 		</div>
 

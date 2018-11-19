@@ -39,15 +39,16 @@ var orders = new Vue({
                                              y: event.clientY - 10 - offset.y },
                                   orderItems: ["Beans", "Curry"]
                                 });
-      }
-      /*displayOrder: function(event) {var offset = {x: event.currentTarget.getBoundingClientRect().left,
-                                                  y: event.currentTarget.getBoundingClientRect().top};
+      },
+      displayOrder: function(event) {
+        var offset = {x: event.currentTarget.getBoundingClientRect().left,
+                      y: event.currentTarget.getBoundingClientRect().top};
       socket.emit("addOrder", { orderId: "T",
                                 details: { x: event.clientX - 10 - offset.x,
                                            y: event.clientY - 10 - offset.y },
                                 orderItems: ["Beans", "Curry"]
                               });
 
-  }*/
+  }
 }
 });

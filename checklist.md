@@ -43,7 +43,7 @@ Create a style.css file which contains:
 ## 04 JavaScript
 
 Create a menu.js file which contains:
-- [ ] At least five different burgers with respective attributes
+- [X] At least five different burgers with respective attributes
 
 Create a js_script.js file which contains:
 - [ ] A MenuItem constructor
@@ -55,15 +55,15 @@ Create a js_script.js file which contains:
 - [ ] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
 
 Create a vue_script.js file which contains:
-- [X] A function that loops through the array and inserts the information to the burger selection section of the index.html file
+- [] A function that loops through the array and inserts the information to the burger selection section of the index.html file
 - [X] A function that loads the information from the menu.js json object and inserts the information to the burger selection section of the index.html file
 - [X] Only displays allergy information if relevant (either only if it contains gluten or lactose, or only if it's gluten or lactose free)
 - [X] Add a checkbox to each menu item
-- [X] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
+- [] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
 
 ## 05 Messaging
 
-- [ ] Exchange the field for the customer's address with the interactive map
+- [X] Exchange the field for the customer's address with the interactive map
 - [ ] Location information from the map should be send to the dispatcher view when pressing the "order" button
 - [ ] In the dispatcher view, you should see the following for every order:
     - [ ] A location on the map
