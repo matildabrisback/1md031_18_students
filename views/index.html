@@ -96,11 +96,11 @@
 						<h3>Delivery information:</h3>
 						<p>
     					<label>Full name</label><br>
-    					<input type="text" required="required" placeholder="First- and last name" v-model="Orderdetails[0]">
+    					<input type="text" required="required" placeholder="First- and last name" v-model="personalInformation[0]">
 						</p>
 						<p>
 						    <label>Email</label><br>
-						    <input type="email" required="required" placeholder="Email address" v-model="Orderdetails[1]">
+						    <input type="email" required="required" placeholder="Email address" v-model="personalInformation[1]">
 						</p>
 						<!--<p>
 						    <label>Street</label><br>
@@ -112,7 +112,7 @@
 						</p>-->
 						<p>
     					<label>Payment options</label><br>
-    					<select v-model="selectedPayment">
+    					<select v-model="personalInformation[2]">
 				        <option selected >Credit card</option>
 				        <option>Cash (upon delivery)</option>
 				        <option>Swish</option>
@@ -125,31 +125,31 @@
             <div class="view-box">
               <div id="dots" v-on:click="displayOrder">
                   <div
-                    v-for="(order, key) in orders"
-                    v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
-                    {{key}}
+
+                    v-bind:style="{ left: details.x + 'px', top: details.y + 'px'}">
+                    T
                   </div>
               </div>
             </div>
 
 						<label>Gender</label><br>
-						<input type="radio" value="Male" name="button" v-model="selectedGender"> Male<br>
-  					<input type="radio" value="Female" name="button" v-model="selectedGender"> Female<br>
-  					<input type="radio" value="Non-binary" name="button" v-model="selectedGender"> Non-binary<br>
-						<input type="radio" value="Undisclosed" checked name="button" v-model="selectedGender"> Undisclosed<br>
+						<input type="radio" value="Male" name="button" v-model="personalInformation[3]"> Male<br>
+  					<input type="radio" value="Female" name="button" v-model="personalInformation[3]"> Female<br>
+  					<input type="radio" value="Non-binary" name="button" v-model="personalInformation[3]"> Non-binary<br>
+						<input type="radio" value="Undisclosed" checked name="button" v-model="personalInformation[3]"> Undisclosed<br>
 
             <div id="orders">
-              <button v-on:click="markDone()" type="submit"><img src="img/burger.png" width="25" height="25">  Place my order!</button>
+              <button v-on:click="addOrder" type="submit"><img src="img/burger.png" width="25" height="25">  Place my order!</button>
             </div>
 
 					</section>
 
 					<div>
 						<h3>Customer details</h3>
-						<h4>Name and Email: {{Orderdetails[0]}} {{Orderdetails[1]}}</h4>
-						<h4>Gender: {{selectedGender}}</h4>
-						<h4>Payment: {{selectedPayment}}</h4>
-            <h4>Chosen burger: {{checkedBurger}}</h4>
+						<h4>Name and Email: {{personalInformation[0]}} {{personalInformation[1]}}</h4>
+						<h4>Gender: {{personalInformation[2]}}</h4>
+						<h4>Payment: {{personalInformation[3]}}</h4>
+            <h4>Chosen burger: {{checkedBurger[0]}} {{checkedBurger[1]}} {{checkedBurger[2]}}</h4>
 					</div>
 
 		</div>
